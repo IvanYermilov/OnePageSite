@@ -1,0 +1,182 @@
+@font-face {
+    font-family: baldGilroy;
+    src: url(/fonts/Gilroy-Bold.ttf);
+  }
+
+@font-face {
+    font-family: mediumGilroy;
+    src: url(/fonts/Gilroy-Medium.ttf);
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+header {
+    justify-content: right;
+}
+
+#header-text-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1.header-text {
+    font-family: baldGilroy;
+    font-size: 47px;
+    color: #070707;
+}
+
+.default-text {
+    font-family: mediumGilroy;
+    font-size: 18px;
+    color: #070707;
+    
+}
+
+span.vertical {
+    transform: rotate(-90deg);
+    font-family: baldGilroy;
+    font-size: 18px;
+    color: #070707;
+}
+
+span.vertical > span:first-child {
+    color: #828282;
+}
+
+.header-image {
+    padding: 200px;
+    background-image: url(/images/photographer.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+}
+
+/* img.personal-photo {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+} */
+.title-text {
+    font-family: baldGilroy;
+    font-size: 34px;
+    color: #070707;
+}
+
+#about-me {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    align-items: center;
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    align-items: center;
+}
+
+.on {
+    filter: invert(0%) sepia(94%) saturate(14%) hue-rotate(353deg) brightness(93%) contrast(95%);
+}
+
+.off {
+    filter: invert(97%) sepia(92%) saturate(1%) hue-rotate(110deg) brightness(112%) contrast(80%);
+}
+
+ul#programms li {
+    display: flex;
+    justify-content: space-between;
+}
+
+#programms {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.programm {
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-estimation {
+    display: flex;
+    justify-content: space-between;
+}
+
+#portfolio {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    align-items: center;
+    margin: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacts li {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#contacts {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.linkedin-icon {
+    background:url(/images/linkedin.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.instagram-icon {
+    background:url(/images/instagram.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.behance-icon {
+    background:url(/images/behance.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.strange-icon {
+    background:url(/images/strange.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.footer-text {
+    text-align: center; 
+    font-size: 14px;
+    color: #828282;
+}
+
