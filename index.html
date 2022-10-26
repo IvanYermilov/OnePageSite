@@ -8,21 +8,21 @@
         <div id="header-text-info">
             <h1 class="header-text">Denis<br>Novik</h1>
             <span class="default-text" >UX | UI designer<br>24 years old, Minsk</span>
-            <span class="vertical"> 
+            <div class="vertical"> 
                 <span>RU</span>
                 <span>|</span>
                 <span>ENG</span>
-            </span>
+            </div>
         </div>
-        <div class="header-image">
-            <!-- <img class="personal-photo" src="/images/photographer.jpg" alt="Denis photo"> -->
-        </div>
+        <div class="header-image"></div>
     </header>
     <section id="about-me">
-        <h2 class="title-text">About me</h2>
-        <p class="default-text">Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
-        <p class="default-text">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
-        <p class="default-text">Ready to implement excellent projects with wonderful people.</p>    
+        <div id="info">
+            <h2 class="title-text">About me</h2>
+            <p class="default-text">Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
+            <p class="default-text">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+            <p class="default-text">Ready to implement excellent projects with wonderful people.</p>
+        </div>
     </section>
     <section id="skills">
         <h2 class="title-text">Skills</h2>
@@ -30,7 +30,7 @@
         <ul id="programms">
             <li class="programm">
                 <img src="/images/Ps.svg" alt="Adobe Photoshop">
-                <span>Adobe<br>Photoshop</span>
+                <span class="skill-title">Adobe<br>Photoshop</span>
                 <div class="skill-estimation">
                     <img class="star on"  src="/images/Star.svg" alt="Highlited star">
                     <img class="star on"  src="/images/Star.svg" alt="Highlited star">
@@ -41,7 +41,7 @@
             </li>
             <li class="programm">
                 <img src="/images/Ai.svg" alt="Adobe Illustrator">
-                <span>Adobe<br>Illustrator</span>
+                <span class="skill-title">Adobe<br>Illustrator</span>
                 <div class="skill-estimation">
                     <img class="star on"  src="/images/Star.svg" alt="Highlited star">
                     <img class="star on"  src="/images/Star.svg" alt="Highlited star">
@@ -52,7 +52,7 @@
             </li>
             <li class="programm">
                 <img src="/images/Ae.svg" alt="Adobe After Effects">
-                <span>Adobe<br>After<br>Effects</span>
+                <span class="skill-title">Adobe<br>After Effects</span>
                 <div class="skill-estimation">
                     <img class="star on"  src="/images/Star.svg" alt="Highlited star">
                     <img class="star on"  src="/images/Star.svg" alt="Highlited star">
@@ -63,7 +63,7 @@
             </li>
             <li class="programm">
                 <img src="/images/Figma.svg" alt="Figma">
-                <span>Figma</span>
+                <span class="skill-title">Figma</span>
                 <div class="skill-estimation">
                     <img class="star on"  src="/images/Star.svg" alt="Highlited star">
                     <img class="star on"  src="/images/Star.svg" alt="Highlited star">
@@ -75,38 +75,42 @@
         </ul>
     </section>
     <section id="portfolio" >
-        <h2 class="title-text">Portfolio</h2>
-        <div class="portfolio-item">
-            <img src="/images/fashionStore.png" alt="Fashion store">
-            <a class="default-text" href="#">Online fashion store - Homepage</a>
-        </div>
-        <div class="portfolio-item">
-            <img src="/images/reebok.png" alt="Reebok store">
-            <a class="default-text" href="#">Reebok Store - Concept</a>
-        </div>
-        <div class="portfolio-item">
-            <img src="/images/braun.png" alt="Braun store">
-            <a class="default-text" href="#">Braun Landing Page - Concept</a>
+        <div id="portfolio-items">
+            <h2 class="title-text">Portfolio</h2>
+            <div class="portfolio-item">
+                <img src="/images/fashionStore.png" alt="Fashion store">
+                <a class="default-text" href="#">Online fashion store - Homepage</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="/images/reebok.png" alt="Reebok store">
+                <a class="default-text" href="#">Reebok Store - Concept</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="/images/braun.png" alt="Braun store">
+                <a class="default-text" href="#">Braun Landing Page - Concept</a>
+            </div>
         </div>
     </section>
     <footer>
-        <h2 class="title-text">Contacts</h2>
-        <p class="default-text">Want to know more or just chat?<br>You are welcome!</p>
-        <button id="contact-button">Send message</button>
-        <ul id="contacts">
-            <li class="social-media-link">
-                <a class="linkedin-icon" href=""></a>
-            </li>
-            <li class="social-media-link">
-                <a class="instagram-icon link-icon" href=""></a>
-            </li>
-            <li class="social-media-link">
-                <a class="behance-icon link-icon" href=""></a>
-            </li>
-            <li class="social-media-link">
-                <a class="strange-icon link-icon" href=""></a>
-            </li>
-        </ul>
-        <p class="default-text footer-text">Like me on<br>LinkedIn, Instagram, Behance, Dribble</p>
+        <div id="contacts">
+            <h2 class="title-text">Contacts</h2>
+            <p class="default-text">Want to know more or just chat?<br>You are welcome!</p>
+            <a id="contact-button" href="#">Send message</a>
+            <ul id="links">
+                <li class="social-media-link">
+                    <a class="linkedin-icon" href=""></a>
+                </li>
+                <li class="social-media-link">
+                    <a class="instagram-icon link-icon" href=""></a>
+                </li>
+                <li class="social-media-link">
+                    <a class="behance-icon link-icon" href=""></a>
+                </li>
+                <li class="social-media-link">
+                    <a class="strange-icon link-icon" href=""></a>
+                </li>
+            </ul>
+            <p class="default-text footer-text">Like me on<br>LinkedIn, Instagram, Behance, Dribble</p>
+        </div>
     </footer>
 </body>

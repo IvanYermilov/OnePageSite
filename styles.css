@@ -8,18 +8,30 @@
     src: url(/fonts/Gilroy-Medium.ttf);
 }
 
-body {
+html, body {
+    margin: 0px;
+    padding: 0px;
     background-color: #FFFFFF;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 header {
-    justify-content: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
 }
 
 #header-text-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    width: 65%;
 }
 
 h1.header-text {
@@ -31,34 +43,43 @@ h1.header-text {
 .default-text {
     font-family: mediumGilroy;
     font-size: 18px;
-    color: #070707;
-    
+    color: #070707;   
 }
 
-span.vertical {
-    transform: rotate(-90deg);
+div.vertical {
+    transform: rotate(180deg);
+}
+
+
+div.vertical span {
+    display: flex;    
+    writing-mode: vertical-lr;
+    padding: 2px 0px;
     font-family: baldGilroy;
     font-size: 18px;
     color: #070707;
 }
 
-span.vertical > span:first-child {
+div.vertical > span:first-child {
     color: #828282;
 }
 
-.header-image {
-    padding: 200px;
-    background-image: url(/images/photographer.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; 
+@media screen and (max-width: 500px) {
+    div.vertical {
+        display: none;
+    }
 }
 
-/* img.personal-photo {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-} */
+.header-image {
+    width: 65%;
+    height: 55vh;
+    background-image: url(/images/photographer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; 
+    overflow: visible;
+} 
+
 .title-text {
     font-family: baldGilroy;
     font-size: 34px;
@@ -66,11 +87,19 @@ span.vertical > span:first-child {
 }
 
 #about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F6F6F6;
+}
+
+#info {
+    width: 40%;
     display: flex;
     justify-content: center;
     flex-direction: column;  
     align-items: center;
+    text-align: center;
 }
 
 #skills {
@@ -78,6 +107,7 @@ span.vertical > span:first-child {
     justify-content: center;
     flex-direction: column;  
     align-items: center;
+
 }
 
 .on {
@@ -88,15 +118,31 @@ span.vertical > span:first-child {
     filter: invert(97%) sepia(92%) saturate(1%) hue-rotate(110deg) brightness(112%) contrast(80%);
 }
 
+.skill-title {
+    font-family: baldGilroy;
+    font-size: 14px;
+    text-align: center;
+    color: #828282;
+}
+
 ul#programms li {
     display: flex;
     justify-content: space-between;
+    margin: 40px;
 }
 
 #programms {
     display: flex;
-    width: 100%;
+    width: 65%;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 400px) {
+    #programms {
+      flex-direction: column;
+      justify-content: center;
+    }
 }
 
 .programm {
@@ -112,8 +158,15 @@ ul#programms li {
 #portfolio {
     background-color: #F6F6F6;
     display: flex;
+    justify-content: center;
+}
+
+#portfolio-items {
+    display: flex;
+    justify-content: center;
     flex-direction: column;  
     align-items: center;
+    width: 100%;
 }
 
 .portfolio-item {
@@ -121,25 +174,51 @@ ul#programms li {
     justify-content: center;
     flex-direction: column;  
     align-items: center;
-    margin: 20px;
+    width: 100%;
+    margin: 20px;  
 }
 
+.portfolio-item img {
+    width: 65%;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-item img {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .portfolio-item img {
+        width: 90%;
+    }
+}
 footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
-
-#contacts li {
-    display: flex;
-    justify-content: space-between;
-}
-
 
 #contacts {
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+}
+
+#contacts p {
+    text-align: center;
+}
+
+#links li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+#links {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
 }
 
 .linkedin-icon {
@@ -178,5 +257,39 @@ footer {
     text-align: center; 
     font-size: 14px;
     color: #828282;
+}
+
+#contact-button {
+  align-items: center;
+  text-decoration:none;
+  background-color: #070707;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: baldGilroy;
+  font-size: 18px;
+  justify-content: center;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+#contact-button:hover,
+#contact-button:focus { 
+  background-color: #333333;
+  color: #ffffff;
 }
 
