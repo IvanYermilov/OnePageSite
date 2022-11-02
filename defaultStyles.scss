@@ -1,0 +1,24 @@
+@mixin default-flex-attributes {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.footer-contacts {
+    @include default-flex-attributes;
+}   
+
+header {
+    @include default-flex-attributes;
+}
+
+.section-about-me {
+    @include default-flex-attributes;
+}
+
+.about-me-info {
+    @include default-flex-attributes;
+}
+
+.section-skills {
+    @include default-flex-attributes;
+}

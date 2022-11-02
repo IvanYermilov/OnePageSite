@@ -1,0 +1,24 @@
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-skills {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=defaultStyles.css.map */
