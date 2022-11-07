@@ -1,24 +1,41 @@
 .footer-contacts {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
 header {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
 .section-about-me {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
 .about-me-info {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
 .section-skills {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.portfolio-items-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.portfolio-item {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
 }/*# sourceMappingURL=defaultStyles.css.map */

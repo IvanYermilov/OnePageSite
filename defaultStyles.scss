@@ -1,5 +1,6 @@
 @mixin default-flex-attributes {
     display: flex; 
+    justify-content: center;
     flex-direction: column; 
 }
 
@@ -20,5 +21,13 @@ header {
 }
 
 .section-skills {
+    @include default-flex-attributes;
+}
+
+.portfolio-items-list {
+    @include default-flex-attributes;
+}
+
+.portfolio-item {
     @include default-flex-attributes;
 }
