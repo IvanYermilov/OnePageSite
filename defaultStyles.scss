@@ -1,0 +1,33 @@
+@mixin default-flex-attributes {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.footer-contacts {
+    @include default-flex-attributes;
+}   
+
+header {
+    @include default-flex-attributes;
+}
+
+.section-about-me {
+    @include default-flex-attributes;
+}
+
+.about-me-info {
+    @include default-flex-attributes;
+}
+
+.section-skills {
+    @include default-flex-attributes;
+}
+
+.portfolio-items-list {
+    @include default-flex-attributes;
+}
+
+.portfolio-item {
+    @include default-flex-attributes;
+}

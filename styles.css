@@ -1,0 +1,323 @@
+@font-face {
+    font-family: baldGilroy;
+    src: url(/fonts/Gilroy-Bold.ttf);
+  }
+
+@font-face {
+    font-family: mediumGilroy;
+    src: url(/fonts/Gilroy-Medium.ttf);
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFFFF;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header {
+    min-height: 760px;
+    padding: 0 0 5% 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.header-text-info {
+    padding: 125px 0 30px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    min-height: 275px;
+    width: 65%;
+}
+
+.header-text-info h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1.header-text {
+    font-family: baldGilroy;
+    font-size: 47px;
+    color: #070707;
+}
+
+.default-text {
+    font-family: mediumGilroy;
+    font-size: 18px;
+    color: #070707;   
+}
+
+.vertical-text {
+    transform: rotate(180deg);
+}
+
+.vertical-text > span:before {
+    color: #828282;
+    content: "RU";
+  }
+
+
+div.vertical-text span {
+    display: flex;    
+    writing-mode: vertical-lr;
+    padding: 2px 0px;
+    font-family: baldGilroy;
+    font-size: 18px;
+    color: #070707;
+}
+
+@media screen and (max-width: 500px) {
+    div.vertical-text {
+        display: none;
+    }
+}
+
+.header-image {
+    width: 65%;
+    height: 55vh;
+    background-image: url(/images/photographer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; 
+    overflow: visible;
+} 
+
+.title-text {
+    font-family: baldGilroy;
+    font-size: 34px;
+    color: #070707;
+}
+
+.section-about-me {
+    min-height: 500px;
+    padding: 5% 0;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #F6F6F6;
+}
+
+.about-me-info {
+    width: 40%;
+    align-items: center;
+    text-align: center;
+}
+
+.section-skills {
+    min-height: 600px;
+    padding: 5% 0;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+
+.filled {
+    filter: invert(0%) sepia(94%) saturate(14%) hue-rotate(353deg) brightness(93%) contrast(95%);
+}
+
+.empty {
+    filter: invert(97%) sepia(92%) saturate(1%) hue-rotate(110deg) brightness(112%) contrast(80%);
+}
+
+.programm-title {
+    font-family: baldGilroy;
+    font-size: 14px;
+    text-align: center;
+    color: #828282;
+}
+
+.programms-list {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 400px) {
+    programms-list {
+      flex-direction: column;
+      justify-content: center;
+    }
+}
+
+.programm {
+    height: 205px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.skill-estimation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-section {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-items-list {
+    flex-direction: column;  
+    align-items: center;
+    width: 100%;
+}
+
+.portfolio-item {
+    align-items: center;
+    width: 100%; 
+}
+
+.portfolio-item img {
+    width: 65%;
+}
+
+.portfolio-item a {
+    padding: 45px 0 100px 0;
+    box-sizing: border-box;
+}
+
+.portfolio-item a {
+    padding: 45px 0 100px 0;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 600px) {
+    .portfolio-item img {
+        width: 75%;
+    }
+
+    .portfolio-item a {
+        padding: 40px 0 88px 0;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .portfolio-item img {
+        width: 90%;
+    }
+
+    .portfolio-item a {
+        padding: 33px 0 78px 0;
+        box-sizing: border-box;
+    }
+}
+
+footer {
+    min-height: 620px;
+    padding: 5% 0 8% 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contacts {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 65%;
+}
+
+.footer-contacts p {
+    text-align: center;
+}
+
+.contact-button {
+    margin: 30px 0 85px;
+    align-items: center;
+    text-decoration:none;
+    background-color: #070707;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: baldGilroy;
+    font-size: 18px;
+    justify-content: center;
+    width: 180px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transition: ease 1s;
+}
+  
+.contact-button:hover,
+.contact-button:focus { 
+    background-color: #585858;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 400px) {
+    .contact-button {
+        width: 315px;
+        margin: 40px 0 48px;
+    }
+}
+
+.contact-links-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.contact-links-list {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.linkedin-icon {
+    background:url(/images/linkedin.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.instagram-icon {
+    background:url(/images/instagram.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.behance-icon {
+    background:url(/images/behance.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.strange-icon {
+    background:url(/images/strange.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.footer-text {
+    text-align: center; 
+    font-size: 14px;
+    color: #828282;
+}
